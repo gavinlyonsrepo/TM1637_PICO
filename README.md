@@ -1,4 +1,6 @@
-# TM1637 Readme
+[![Website](https://img.shields.io/badge/Website-Link-blue.svg)](https://gavinlyonsrepo.github.io/)
+
+# TM1637_PICO
 
 ## Table of contents
 
@@ -10,7 +12,7 @@
 
 * Display Name: TM1637
 * Author: Gavin Lyons.
-* Description: A Raspberry pi PICO (rp2040) library to display data on TM1637 seven segment modules.
+* Description: A Raspberry pi PICO SDK C++ library to drive TM1637 LED seven segment modules.
 
 ## Hardware
 
@@ -36,12 +38,12 @@ Model 4:
 
 ## Software
 
-There is one example file. A table in file 'tm1637_font_dataL.cpp' provides ASCII to Seven Segment data.
+There is one example file. A table in file 'tm1637_font_data.cpp' provides ASCII to Seven Segment data.
 . gfedcba (seven segments ) In the gfedcba representation,
 a byte value of 0x06 would turn on segments "c" and "b",
 which would display a "1". https://en.wikipedia.org/wiki/Seven-segment_display
 
 ### Comms delay
 
-The Serial Communications delay used is set by default to 75 uS user can change this in constructor parameters.
+The Serial Communications delay used is set by default to 75 uS,  user can change this in constructor parameters.
 

@@ -92,6 +92,7 @@ void Setup(void)
 	myTM.setBrightness(0x07, true);
 	busy_wait_ms(myTestDelay1);
 	printf("Test Begin :: TM1637\r\n");
+	gpio_put(StatusLEDPin, false);
 }
 
 // ************** Function Space ***********
